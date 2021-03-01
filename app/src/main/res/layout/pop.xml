@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD3F1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "어플리케이션 정보"
+        android:drawableStart="@drawable/ic_baseline_help_center_24"
+        android:drawableLeft="@drawable/ic_baseline_help_center_24"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/design_default_color_on_primary"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "어플리케이션 버전 : 0.1 Ver"
+        android:drawableStart="@drawable/ic_baseline_build_24"
+        android:drawableLeft="@drawable/ic_baseline_build_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "개발자 : 김선홍"
+        android:drawableStart="@drawable/ic_baseline_verified_user_24"
+        android:drawableLeft="@drawable/ic_baseline_verified_user_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "소속 : 부산가톨릭대학교 소프트웨어학과(http://soft.cup.ac.kr/)"
+        android:drawableStart="@drawable/ic_baseline_verified_user_24"
+        android:drawableLeft="@drawable/ic_baseline_verified_user_24"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "운영진 소개"
+            android:drawableStart="@drawable/ic_baseline_assignment_ind_24"
+            android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/cup"
+                        android:id="@+id/imageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="김선홍"
+                            android:textStyle="bold"
+                            android:textColor="@color/design_default_color_on_primary"
+                            android:textSize="17dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="소프트웨어학과 16학번"
+                            android:textColor="#000000"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="010-3426-5630"
+                            android:textColor="#000000"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

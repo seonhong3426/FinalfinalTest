@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#03A9F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:text="운동 종목 추가"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동 추가"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동명 "
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="운동명"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동 부위"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/inputBody"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="운동부위"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/extraWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:text="추가"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+
+            android:layout_marginRight="10dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/finExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:text="완료"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

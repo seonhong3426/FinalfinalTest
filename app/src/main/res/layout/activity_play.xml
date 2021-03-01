@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수행 기록 작성"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="20dp"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/buttonshape"
+                android:text="나가기"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수행한 운동"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+
+        <ListView
+            android:id="@+id/doList"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <EditText
+            android:id="@+id/inputDate"
+            android:hint="날 짜"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="#CCF5FF"/>
+        <EditText
+            android:id="@+id/inputTitle"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="#CCF5FF"
+            android:hint="제 목"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/inputContents"
+                android:hint="내 용"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCF5FF"
+                android:layout_marginHorizontal="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="20dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/storeButton"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#ffffff"
+                android:text="저장하기"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

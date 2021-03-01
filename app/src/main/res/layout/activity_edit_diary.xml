@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:text="상세보기 및 수정"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="나가기"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/inputDate2"
+            android:hint="날 짜"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="#C9EEFF"/>
+        <EditText
+            android:id="@+id/inputTitle2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="#C9EEFF"
+            android:hint="제 목"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/inputContents2"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#C9EEFF"
+            android:hint="내 용"
+            android:padding="10dp"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/storeButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/buttonshape"
+                android:text="저장"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

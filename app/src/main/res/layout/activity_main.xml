@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#90DCFF"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mainimage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동기록 관리 도우미"
+            android:layout_marginVertical="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recordWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="일기목록"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            android:text="일기작성"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="운동목록"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            />
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp">
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_help_center_24"
+            android:drawableLeft="@drawable/ic_baseline_help_center_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="  어플리케이션 정보"
+            android:id="@+id/information"/>
+
+    </LinearLayout>
+</LinearLayout>
